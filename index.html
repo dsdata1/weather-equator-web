@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Demo</title>
+
+  <!-- Bootstrap CDN -->
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default nvcolor">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html"><strong>Lattitude</strong></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="temp_lat.html">Max Temperature</a></li>
+              <li><a href="lat_hum.html">Humidity</a></li>
+              <li><a href="lat_cloud.html">Cloudiness</a></li>
+              <!-- <li role="separator" class="divider"></li> -->
+              <li><a href="lat_wind.html">Wind Speed</a></li>
+            </ul>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+
+
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-7 backc">
+        <h1>Summary: Lattitude vs. X</h1>
+        <hr>
+        <img src="images\temp_lat.png" class="img-responsive" align="left">
+        <p>What's the weather like as we get closer to the equator? The main question that will be answered in this analysis. In order to answer this question, I randomly selected 500 cities from around the world using the citipy library. Then, I look at current weather conditions in those cities using api call from openweather source.</p>
+        <p>After collecting all the data, we used python matplotlib library to plot various weather condition vs lattiude.  We are able to see if there any trends in weather condition in city that are located closer to equator versus farther away.</p>
+      </div>
+
+      <div class="col-md-1">
+      <div class="row">
+      </div>
+      </div>
+
+      <div class="col-md-3 backc">
+        <h2>Visualizations</h2>
+        <hr>
+        <div class="row">
+          <a href="temp_lat.html"><img src="images\temp_lat.png" class="parents img-thumbnail"></a>
+          <a href="lat_cloud.html"><img src="images\lat_cloud.png" class="parents img-thumbnail"></a>
+          <a href="lat_wind.html"><img src="images\lat_wind.png" class="parents img-thumbnail"></a>
+          <a href="lat_hum.html"><img src="images\lat_hum.png" class="parents img-thumbnail"></a>
+        </div>
+      </div> 
+      </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>

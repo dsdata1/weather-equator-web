@@ -1,0 +1,44 @@
+/*div {
+  border: 1px black solid;
+}*/
+
+.parents {
+display: inline !important;
+width: 48%;
+}
+
+body {
+    background-color: #DFE2DB;
+  }
+
+/*.container {
+  background-color: blue;
+}*/
+
+.backc {
+  background-color: white;
+}
+
+.nvcolor {
+  background-color: #7E8F7C;
+}
+
+.backh {
+  background-color: blue;
+}
+
+.navbar-brand {
+  color: red;
+  background-color: orange;
+}
+/*.floatings {
+    float: left;
+  }*/
+
+.navbar a {
+  color: #2B2B2B !important;
+}
+
+.sborder a {
+  border: 20px black solid !important;
+}
